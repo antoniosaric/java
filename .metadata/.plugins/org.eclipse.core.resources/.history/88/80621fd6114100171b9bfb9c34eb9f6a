@@ -1,5 +1,7 @@
 package javahacker;
 
+
+
 	import java.util.*;
 
 	public class appleOrange {
@@ -30,31 +32,38 @@ package javahacker;
 	            int close = s - a;
 	            int far = t - a ;
 
+	            //n apple[i];
+	            //s t house
+	                       // a 
 	            if ( apple[i] >= close && apple[i] <= far){
+	            	System.out.print("close");
+	            	System.out.print(close);
+	            	System.out.print("far");
+	            	System.out.print(far);
+	                //m
 	                apple_count++;
+	                System.out.print("after count up");
+	                System.out.print(apple_count);
 	            }
+	            System.out.print("final");
+	            System.out.print(apple_count);
 	        }
-	        	        
-	        for(int i = 0; i < orange.length; i++){
-	            int close = s - b;
-	            int far = t - b ;
-	            
-	            if (orange[i] > close && orange[i] < far){
-		            
 	        
-	            	System.out.println("close");
-        			System.out.println(close);
-        			System.out.println("far");
-        			System.out.println(far);
-            		
-	                orange_count++;
-        			System.out.println(orange_count);
-
-	            }
-	        }
+	        
+	        
+	       // for(int i = 0; i < orange.length; i++){
+	        //    int count;
+	            
+	            
+	            //b
+	      //      if (orange[i] > close && orange[i] < far){
+	    //            orange_count++;
+	  //          }
+//	        }
 	        
 	        System.out.println(apple_count);
-	        System.out.println(orange_count);
+	        //System.out.println(orange_count);
 	   
+	        
 	    }
 	}
