@@ -33,7 +33,9 @@ package javahacker;
 	            }
 
 	            int far = t - a ;
-
+	            if(far < 0){
+	            	far = far * -1;;
+	            }
 	            if (apple[i] > 0){
 	            if ( apple[i] >= close && apple[i] <= far){
 	                apple_count++;
