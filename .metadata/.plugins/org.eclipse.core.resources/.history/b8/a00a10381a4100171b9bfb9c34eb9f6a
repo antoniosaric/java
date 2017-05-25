@@ -27,34 +27,21 @@ package javahacker;
 	        }
 	        
 	        for (int i = 0; i < apple.length; i++){
-	            int close = s - a;
-	            if(close < 0){
-	            	close = close * -1;;
-	            }
-
-	            int far = t - a ;
 
 	            if (apple[i] > 0){
-	            if ( apple[i] >= close && apple[i] <= far){
+	            	int fall = a + apple[i];
+	            if ( fall >= s && fall <= t){
 	                apple_count++;
 	            }
 	        }
 	        }
 	        	        
 	        for(int i = 0; i < orange.length; i++){
-	            int far = s - b;
-	            if(far < 0){
-	            	far = Math.abs(far);
-	            }
-	            int close = t - b ;
-	            if(close < 0){
-	            	close = Math.abs(close);
-	            }
 
 	            if (orange[i] < 0){
-	            	int positive = Math.abs(orange[i]);
+	            	int fall = b + orange[i];
 	            	
-	            if (positive > close && positive < far){
+	            if (fall > a && fall < t){
           		
 	                orange_count++;
 
