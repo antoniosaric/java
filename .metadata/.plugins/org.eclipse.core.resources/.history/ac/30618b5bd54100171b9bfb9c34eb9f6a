@@ -1,0 +1,31 @@
+package javahacker;
+
+public class CarTruckMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Truck cartruck =new Truck(null, 0, 0, 0);
+		cartruck.Model=2016;
+		cartruck.MilesDriven=100;
+		cartruck.HasTruck=true;
+		cartruck.Price=23300;
+		cartruck.Type="GSM";
+		System.out.println(cartruck.GetPrice());
+		System.out.println(cartruck.Model);
+		System.out.println(cartruck.HasTruck);
+		System.out.println(cartruck.Type);
+		
+		Truck cartruck2 =new Truck(null, 0, 0, 0);
+		cartruck2.Model=2015;
+		cartruck2.MilesDriven=50;
+		cartruck2.HasTruck=false;
+		cartruck2.Price=13300;
+		cartruck2.Type="poo";
+		System.out.println(cartruck2.GetPrice());
+		System.out.println(cartruck2.Model);
+		System.out.println(cartruck2.HasTruck);
+		System.out.println(cartruck2.Type);
+		
+	}
+
+}
