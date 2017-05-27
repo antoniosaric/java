@@ -1,0 +1,23 @@
+package javahacker;
+
+public class generic {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] a1={"allex", "dan", "tony"};
+		int[] a2={1,2,3,4,5,2,2,3};
+		double [] a3={3.4,7.6,5.2};
+				
+
+	}
+	
+	static void print(String[] ar){
+		for (String s:ar){
+			System.out.println(s);
+		}
+
+	}
+	
+	
+
+}
