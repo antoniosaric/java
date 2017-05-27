@@ -18,10 +18,8 @@ public class CarTruckMain {
 		cartruck2.SetHasTruck(false);
 		cartruck2.Price=13300;
 		cartruck2.Type="poo";
-		System.out.println(cartruck.GetPrice());
+
 		
-
-		}
-
+	}
 
 }

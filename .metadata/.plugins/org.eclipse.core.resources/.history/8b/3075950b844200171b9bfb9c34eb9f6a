@@ -7,7 +7,7 @@ public class CarTruckMain {
 		Truck cartruck =new Truck(null, 0, 0, 0);
 		cartruck.Model=2016;
 		cartruck.MilesDriven=100;
-		cartruck.SetHasTruck(true);
+		cartruck.HasTruck=true;
 		cartruck.Price=23300;
 		cartruck.Type="GSM";
 
@@ -15,13 +15,11 @@ public class CarTruckMain {
 		Truck cartruck2 =new Truck(null, 0, 0, 0);
 		cartruck2.Model=2015;
 		cartruck2.MilesDriven=50;
-		cartruck2.SetHasTruck(false);
+		cartruck2.HasTruck=false;
 		cartruck2.Price=13300;
 		cartruck2.Type="poo";
-		System.out.println(cartruck.GetPrice());
+
 		
-
-		}
-
+	}
 
 }
