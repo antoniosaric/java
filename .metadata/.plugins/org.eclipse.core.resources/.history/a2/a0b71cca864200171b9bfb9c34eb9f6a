@@ -9,8 +9,7 @@ package javahacker;
 			int Model;
 			double Price;
 			double MilesDriven;
-			static String Owners;
-			Owners owners;
+			static String Owners;			
 			double GetPrice(){
 				double NewPrice=Price-(MilesDriven*100);
 				return NewPrice;
@@ -26,7 +25,6 @@ package javahacker;
 				this.Model=Model;
 				this.Price=Price;
 				this.MilesDriven=MilesDriven;
-				owners = new Owners();
 				this.GetPrice();
 				
 				
