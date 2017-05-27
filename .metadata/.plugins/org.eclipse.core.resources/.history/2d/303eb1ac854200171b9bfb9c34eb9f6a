@@ -15,7 +15,7 @@ public class Truck extends Car{
 		boolean HasTruck;
 		// TODO Auto-generated constructor stub
 		
-		System.out.print(super.GetPrice());
+
 	}
 	@Override
 	double GetPrice(){
@@ -23,7 +23,5 @@ public class Truck extends Car{
 		return NewPrice;
 		
 	}
-	
-	
 
 }

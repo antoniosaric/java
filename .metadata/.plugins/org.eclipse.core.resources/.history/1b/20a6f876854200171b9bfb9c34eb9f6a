@@ -14,16 +14,6 @@ public class Truck extends Car{
 		super(Type, Model, Price, MilesDriven);
 		boolean HasTruck;
 		// TODO Auto-generated constructor stub
-		
-		System.out.print(super.GetPrice());
 	}
-	@Override
-	double GetPrice(){
-		double NewPrice=Price-(MilesDriven*100);
-		return NewPrice;
-		
-	}
-	
-	
 
 }
