@@ -1,0 +1,19 @@
+package javahacker;
+
+public class casting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Truck cartruck2 =new Truck(null, 0, 0, 0);
+		cartruck2.Model=2015;
+		cartruck2.MilesDriven=50;
+		cartruck2.SetHasTruck(false);
+		cartruck2.Price=13300;
+		cartruck2.Type="poo";
+		
+		double x = 3.4;
+		int y = (int)x;
+
+	}
+
+}
