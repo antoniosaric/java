@@ -706,3 +706,8 @@ org.eclipse.jface.text.BadLocationException
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2017-05-28 12:39:31.878
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
