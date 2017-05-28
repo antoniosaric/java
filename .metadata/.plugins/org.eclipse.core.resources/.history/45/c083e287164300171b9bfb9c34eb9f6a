@@ -1,0 +1,24 @@
+package javahacker;
+
+import java.io.FileWriter;
+
+public class myfile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+
+	}
+	
+	void FileWriterOn(String str){
+		try{
+			FileWriter fo=new FileWriter("test.txt");
+			fo.write(str);
+			fo.close();
+		} catch(Exception ex){
+			System.out.println(ex.getMessage());
+		}
+	}
+
+}

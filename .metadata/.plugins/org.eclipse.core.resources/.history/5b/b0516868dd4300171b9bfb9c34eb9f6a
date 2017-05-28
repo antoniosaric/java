@@ -1,0 +1,22 @@
+package javahacker;
+
+public class myThread extends Thread{
+
+@Override
+public void run(){
+	//here your code
+	
+	int count=0;
+	while(count<20){
+		System.out.println(count);
+		count++;
+		try{
+			Thread.sleep(1000);
+		}catch (InterruptedException e){
+			e.printStackTrace();
+		}
+		
+		
+	}
+}
+}
