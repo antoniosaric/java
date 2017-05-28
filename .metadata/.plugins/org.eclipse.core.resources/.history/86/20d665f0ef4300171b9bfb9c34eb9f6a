@@ -1,0 +1,18 @@
+package javahacker;
+
+import java.util.ArrayList;
+
+public class mycollections {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> ar=new ArrayList<String>();
+		ar.add("developer");
+		ar.add("tester");
+		ar.add("manager");
+		System.out.println(ar.get(0));
+		
+
+	}
+
+}
