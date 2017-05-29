@@ -1,0 +1,18 @@
+package com.interviewquestions;
+
+public class hackerrank{
+	
+
+	long getXNumber(int n) {
+		int poncho = n + 100;
+		
+		
+		getXNumber(100);
+		System.out.print(poncho);
+		return poncho;
+}
+	
+	
+}
+
+

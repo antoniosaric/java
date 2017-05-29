@@ -1,0 +1,20 @@
+package javahacker;
+
+import java.util.HashMap;
+
+public class mycollectionHash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap<Integer, String> map =new HashMap<Integer, String>();
+		map.put(1, "mark");
+		map.put(4, "sam");
+		map.put(5555, "edqin");
+		System.err.println(map.get(1));
+		
+		
+
+	}
+
+}
