@@ -1,0 +1,12 @@
+package javahacker;
+
+public class PlayGameClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PlayGame myPlayGame = (){
+			System.out.println("game is on");
+		}
+	}
+
+}
