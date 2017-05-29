@@ -1,0 +1,11 @@
+package javahacker;
+
+
+@FunctionalInterface
+
+public class PlayGame {
+	
+	public void play() {
+	}
+
+}
