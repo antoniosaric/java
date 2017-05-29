@@ -11,7 +11,14 @@ public class myThreadMain {
 		
 		Thread.sleep(6000);
 		
-		t.IsRunning=false;
+		//t.IsRunning=false;
+		
+		
+		
+		
+		myRunable r = new myRunable();
+		Thread tr= new Thread(r);
+		tr.start();
 	}
 
 }
