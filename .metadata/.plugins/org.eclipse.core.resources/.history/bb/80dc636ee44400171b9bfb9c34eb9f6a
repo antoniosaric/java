@@ -2,8 +2,6 @@ package FlappyBirdClone;
 
 import java.awt.Canvas;
 import java.awt.Dimension;
-import java.awt.Graphics2D;
-import java.awt.image.BufferStrategy;
 import java.util.ArrayList;
 
 import javax.swing.JFrame;
@@ -50,24 +48,14 @@ public class Game {
 		u.update(input);
 		}
 	}
-	
 		
 	private void render(float interpolation) {
-		BufferStrategy b = game.getBufferStrategy();
-		if (b == null) {
-			game.createBufferStrategy(2);
-			return;
-		}
-		
-		Graphics2D g = (Graphics2D) b.getDrawGraphics();
-		g.clearRect(0, 0, game.getWidth(), game.getHeight());
-		
 		for (Renderable r : renderable) {
-			r.render(g, interpolation);
+			r.render(g2d, interpolation);
 		}
-		g.dispose();
-		b.show();
 		
 	}
 	
+	
+
 }
