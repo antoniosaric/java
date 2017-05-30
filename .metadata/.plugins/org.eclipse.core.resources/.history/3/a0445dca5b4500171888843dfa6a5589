@@ -7,11 +7,8 @@ public class Main {
 		Game g = new Game();
 		
 		// initialise game objects
-		Pipes p = new Pipes();		
+				
 		// add updatables
-		g.addRenderable(p);
-		g.addUpdatable(p);
-		
 		
 		g.start();
 
