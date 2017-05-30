@@ -1,10 +1,7 @@
 package FlappyBirdClone;
 
-public class Updatable {
+public interface Updatable {
 
-	public void update(Input input) {
-		
-	}
-	
+	    public void update(Input input);
 	
 }

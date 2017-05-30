@@ -72,11 +72,11 @@ public class Pipes implements Updatable, Renderable {
 			pipeCoords[0][0] = x1;
 			pipeCoords[0][1] = y1;
 			break;
-		case 1:
+		case1:
 			pipeCoords[1][0] = x2;
 			pipeCoords[1][1] = y2;
 			break;
-		case 2:
+		case2:
 			pipeCoords[2][0] = x3;
 			pipeCoords[2][1] = y3;
 			break;
