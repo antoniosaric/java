@@ -51,7 +51,6 @@ public class Game {
 		gameWindow.setLocationRelativeTo(null);
 		
 		input = new Input();
-		game.addKeyListener(input);
 		
 		//game loop
 		final int TICKS_PER_SECOND = 60;
