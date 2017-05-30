@@ -15,21 +15,21 @@ public class Input implements KeyListener {
     }
     
     @Override
-    public void keyPressed(KeyEvent e) {
-        if(e.getKeyCode() == KeyEvent.VK_SPACE && spaceReleased) {
+    public void keyPressed(KeyEvent ke) {
+        if(ke.getKeyCode() == KeyEvent.VK_SPACE && spaceReleased) {
             spacePressed = true;
             spaceReleased = false;
         }
     }
 
     @Override
-    public void keyReleased(KeyEvent e) {
-        if(e.getKeyCode() == KeyEvent.VK_SPACE) {
+    public void keyReleased(KeyEvent ke) {
+        if(ke.getKeyCode() == KeyEvent.VK_SPACE) {
             spaceReleased = true;
         }
     }
     
     @Override
-    public void keyTyped(KeyEvent e) {}
+    public void keyTyped(KeyEvent ke) {}
     
 }
