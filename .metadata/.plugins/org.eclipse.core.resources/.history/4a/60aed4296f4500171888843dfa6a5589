@@ -1,0 +1,25 @@
+package FlappyBirdClone;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Game g = new Game();
+		
+		// initialise game objects
+		Pipes p = new Pipes();	
+		Bird b = new Bird(p);
+		
+		// add updatables
+		g.addRenderable(p);
+		g.addUpdatable(p);
+		
+		g.addRenderable(b);
+		g.addUpdatable(b);
+		
+		
+		g.start();
+
+	}
+
+}
