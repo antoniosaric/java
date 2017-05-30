@@ -1,9 +1,6 @@
 package FlappyBirdClone;
 
-import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 public class Bird implements Updatable, Renderable {
 
@@ -14,28 +11,6 @@ public class Bird implements Updatable, Renderable {
 	
 	private Pipes pipes;
 	private int scoredPipe = 0;
-	
-	private int sore = 0;
-	
-	private Font gameFont = new Font("Arial", Font.BOLD, 30);
-	
-	private BufferedImage flapUp;
-	private BufferedImage flapDown;
-	
-	public Bird(Pipes pipes) {
-		resetBird();
-		
-		this.pipes = pipes;
-		
-		try {
-			flapUp = Sprite.getSprite("bird_up.png");
-			flapDown = Sprite.getSprite("bird_down.png");
-		} catch (IOException ex) {
-			System.err.println(ex.getMessage());
-			System.exit(1);
-		}
-	}
-	
 	
 	public void resetBird() {
 		x = 100;

@@ -96,15 +96,13 @@ public class Game {
 		}
 
 	}
-	
-	@Override
 	private void update() {
 		for (Updatable u : updatable) {
 		u.update(input);
 		}
 	}
 	
-	@Override	
+		
 	private void render(float interpolation) {
 		BufferStrategy b = game.getBufferStrategy();
 		if (b == null) {
