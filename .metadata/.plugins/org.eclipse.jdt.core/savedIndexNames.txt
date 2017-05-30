@@ -1,3 +1,2 @@
 INDEX VERSION 1.127+/Users/tonysaric/Desktop/java/.metadata/.plugins/org.eclipse.jdt.core
-80392585.index
 1067791601.index

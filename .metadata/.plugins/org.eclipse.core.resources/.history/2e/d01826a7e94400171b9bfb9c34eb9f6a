@@ -21,19 +21,6 @@ public class Game {
 	private ArrayList<Updatable> updatable = new ArrayList<>();
 	private ArrayList<Renderable> renderable = new ArrayList<>();
 	
-	public void addUpdatable(Updatable u) {
-		updatable.add(u);
-	}
-	public void removeUpdatable(Updatable u) {
-		updatable.remove(u);
-	}
-	public void addRenderable(Updatable r) {
-		updatable.add(r);
-	}
-	public void removeRenderable(Updatable r) {
-		updatable.remove(r);
-	}
-	
 	
 	public void start() {
 		
@@ -52,46 +39,8 @@ public class Game {
 		
 		input = new Input();
 		
-		//game loop
-		final int TICKS_PER_SECOND = 60;
-		final int TIME_PER_TICK = 1000/ TICKS_PER_SECOND;
-		final int MAX_FRAMESKIPS = 5;
-		
-		long nextGameTick = System.currentTimeMillis();
-		int loops;
-		float interpolation;
-		
-		long timeAtLastFPSCheck = 0;
-		int ticks = 0;
-		
-		
 		boolean running = true;
 		while (running) {
-			//updating
-			loops = 0;
-			
-			while (System.currentTimeMillis() > nextGameTick && loops < MAX_FRAMESKIPS) {
-				update();
-				ticks++;
-				
-				nextGameTick += TIME_PER_TICK;
-				loops++;
-			}
-			
-			//rendering
-			
-			interpolation = (float) (System.currentTimeMillis() +TIME_PER_TICK - nextGameTick)
-					/(float) TIME_PER_TICK;
-			render(interpolation);
-			
-			//fps check
-			if(System.currentTimeMillis() - timeAtLastFPSCheck >= 1000) {
-				System.out.println("FPS: " + ticks);
-				gameWindow.setTitle(gameName + " - FPS: " + ticks);
-				ticks = 0;
-				timeAtLastFPSCheck = System.currentTimeMillis();
-			}
-			
 			
 		}
 
